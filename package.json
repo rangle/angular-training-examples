@@ -5,6 +5,7 @@
   "angular-cli": {},
   "scripts": {
     "start": "ng serve",
+    "start:language": "live-server ./language-examples",
     "postinstall": "typings install",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
@@ -36,6 +37,7 @@
     "karma": "0.13.22",
     "karma-chrome-launcher": "0.2.3",
     "karma-jasmine": "0.3.8",
+    "live-server": "^1.1.0",
     "protractor": "3.3.0",
     "ts-node": "0.5.5",
     "tslint": "3.11.0",

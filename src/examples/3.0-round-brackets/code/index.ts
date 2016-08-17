@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `<input
     type="button"
-    [value]="label"
+    value="{{ label }}"
     (click)="onClick()">
     <span>{{ randomString }}</span>`,
   styles: [``]

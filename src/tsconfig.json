@@ -17,6 +17,7 @@
   },
 
   "files": [
+    "app.module.ts",
     "main.ts",
     "typings.d.ts"
   ]

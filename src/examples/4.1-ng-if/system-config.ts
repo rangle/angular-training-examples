@@ -47,6 +47,8 @@ declare var System: any;
       '@angular': '/vendor/@angular',
       'rxjs': '/vendor/rxjs',
       'main': './main.js',
+      'example.module': './example.module',
+      './code/app.component': './code/app.component.js'
     },
     packages: cliSystemConfigPackages
   });

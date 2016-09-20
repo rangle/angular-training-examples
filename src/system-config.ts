@@ -13,6 +13,13 @@ const map: any = {
 
 /** User packages configuration. */
 const packages: any = {
+  'rxjs'                             : {main: 'Rx'},
+  '@angular/core'                    : {main: 'bundles/core.umd.min.js'},
+  '@angular/common'                  : {main: 'bundles/common.umd.min.js'},
+  '@angular/compiler'                : {main: 'bundles/compiler.umd.min.js'},
+  '@angular/platform-browser'        : {main: 'bundles/platform-browser.umd.min.js'},
+  '@angular/platform-browser-dynamic': {main: 'bundles/platform-browser-dynamic.umd.min.js'},
+  '@angular/http' : {main: 'bundles/http.umd.min.js'}
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -20,19 +27,6 @@ const packages: any = {
  * Everything underneath this line is managed by the CLI.
  **********************************************************************************************/
 const barrels: string[] = [
-  // Angular specific barrels.
-  '@angular/core',
-  '@angular/common',
-  '@angular/compiler',
-  '@angular/forms',
-  '@angular/http',
-  '@angular/router',
-  '@angular/platform-browser',
-  '@angular/platform-browser-dynamic',
-
-  // Thirdparty barrels.
-  'rxjs',
-
   // App specific barrels.
   'app',
   'app/shared',
@@ -52,7 +46,7 @@ System.config({
   map: {
     '@angular': 'vendor/@angular',
     'rxjs': 'vendor/rxjs',
-    'main': 'main.js'
+    'main': 'main.js',
   },
   packages: cliSystemConfigPackages
 });

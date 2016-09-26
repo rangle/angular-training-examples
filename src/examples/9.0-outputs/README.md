@@ -14,4 +14,4 @@
 
 ## Reference Material
 
-- http://angular-2-training-book.rangle.io/handout/components/app_structure/responding_to_component_events.html
+- [http://angular-2-training-book.rangle.io/handout/components/app_structure/responding_to_component_events.html](http://angular-2-training-book.rangle.io/handout/components/app_structure/responding_to_component_events.html)

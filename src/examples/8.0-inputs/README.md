@@ -15,4 +15,4 @@
 
 ## Reference Material
 
-- http://angular-2-training-book.rangle.io/handout/components/app_structure/passing_data_into_components.html
+- [http://angular-2-training-book.rangle.io/handout/components/app_structure/passing_data_into_components.html](http://angular-2-training-book.rangle.io/handout/components/app_structure/passing_data_into_components.html)

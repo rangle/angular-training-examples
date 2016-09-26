@@ -11,4 +11,4 @@
 
 ## Reference Material
 
-- http://angular-2-training-book.rangle.io/handout/components/
+- [http://angular-2-training-book.rangle.io/handout/components/](http://angular-2-training-book.rangle.io/handout/components/)

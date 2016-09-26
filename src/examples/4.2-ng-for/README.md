@@ -1,4 +1,4 @@
-# *ngFor
+# \*ngFor
 
 ## Purpose
 
@@ -13,7 +13,6 @@
 - Ensure that POJO's are not iterable
 - Optionally learn about track-by
 
-
 ## Reference Material
 
-- http://angular-2-training-book.rangle.io/handout/directives/ng_for_directive.html
+- [http://angular-2-training-book.rangle.io/handout/directives/ng_for_directive.html](http://angular-2-training-book.rangle.io/handout/directives/ng_for_directive.html)

@@ -15,6 +15,6 @@
 
 ## Reference Material
 
-- http://angular-2-training-book.rangle.io/handout/di/
-- http://angular-2-training-book.rangle.io/handout/redux/
-- http://angular-2-training-book.rangle.io/handout/components/app_structure_with_components.html
+- [http://angular-2-training-book.rangle.io/handout/di/](http://angular-2-training-book.rangle.io/handout/di/)
+- [http://angular-2-training-book.rangle.io/handout/redux/](http://angular-2-training-book.rangle.io/handout/redux/)
+- [http://angular-2-training-book.rangle.io/handout/components/app_structure_with_components.html](http://angular-2-training-book.rangle.io/handout/components/app_structure_with_components.html)

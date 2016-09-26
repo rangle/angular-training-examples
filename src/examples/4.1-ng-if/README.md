@@ -1,4 +1,4 @@
-# *ngIf
+# \*ngIf
 
 ## Purpose
 
@@ -12,4 +12,4 @@
 
 ## Reference Material
 
-- http://angular-2-training-book.rangle.io/handout/directives/ng_if_directive.html
+- [http://angular-2-training-book.rangle.io/handout/directives/ng_if_directive.html](http://angular-2-training-book.rangle.io/handout/directives/ng_if_directive.html)

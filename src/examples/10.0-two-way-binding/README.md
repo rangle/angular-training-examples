@@ -12,7 +12,6 @@
 - Notice the importance of the `Change` suffix on the child's `@Output()`
 - Understand the perils of two way data binding on complex components
 
-
 ## Reference Material
 
-- http://angular-2-training-book.rangle.io/handout/components/app_structure/two_way_data_binding.html
+- [http://angular-2-training-book.rangle.io/handout/components/app_structure/two_way_data_binding.html](http://angular-2-training-book.rangle.io/handout/components/app_structure/two_way_data_binding.html)

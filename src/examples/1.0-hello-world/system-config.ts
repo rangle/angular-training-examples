@@ -34,7 +34,7 @@ declare var System: any;
     // App specific barrels.
     '../../app',
     'examples',
-    'code'
+    'app'
     /** @cli-barrel */
   ];
 

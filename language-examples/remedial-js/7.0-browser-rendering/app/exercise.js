@@ -3,4 +3,4 @@
 
 const exampleDiv = document.getElementById('example');
 
-exampleDiv.innerHTML = 'Source Maps: See ReadMe file for definition, examples and exercises';
+exampleDiv.innerHTML = 'Browser Rendering: See ReadMe file for definition, examples and exercises';

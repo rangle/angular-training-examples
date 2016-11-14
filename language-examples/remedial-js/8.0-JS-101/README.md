@@ -14,7 +14,7 @@ simply needs a refresher. We will walk through the basic JavaScript
 constructs.
 
 
-##Function Chaining / Fluent interfaces
+#Function Chaining / Fluent interfaces
 
 If we look at files that make up an AngularJS application, a typical file
 would often consist of a single giant JavaScript statement where multiple
@@ -117,7 +117,7 @@ new Kitten()
 // > saving Bob, the black male kitten...
 ```
 
-## JavaScript Functions
+# JavaScript Functions
 
 In languages such as Java, arguments to functions and methods can be objects
 or primitives, but not functions. In JavaScript, however, functions are first
@@ -205,7 +205,7 @@ function fnFoo(){
 }
 ````
 
-## Variable Scope
+# Variable Scope
 
 In JavaScript, variables are _global_ unless declared inside a function.
 Global variables can make code very hard to debug and maintain, so you must
@@ -251,7 +251,7 @@ It is worth noting that unlike some languages, JavaScript does not support
 "lexical scoping": variable are defined at the level of a function, not a
 block. (This is being fixed in ES6 with the keyword "let".)
 
-## Nested Scopes
+# Nested Scopes
 
 In JavaScript, a function can be declared within another function.  The
 function has a local (function) scope, it has access to the scope of the outer

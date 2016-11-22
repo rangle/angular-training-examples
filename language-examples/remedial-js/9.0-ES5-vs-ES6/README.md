@@ -133,7 +133,7 @@ var bob = {
 };
 ```
 
-## Block Scoping Functions
+## Block Scoping
 
 Block scoped bindings provide scopes other than the function and top level scope. This ensures your variables don't leak out of the scope they're defined:
 

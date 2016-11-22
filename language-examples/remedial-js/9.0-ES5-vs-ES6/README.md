@@ -15,23 +15,21 @@ http://kangax.github.io/compat-table/es6/
 **Table of contents:**
 
 1. [Arrow Functions](#arrow-functions)
-1. [Block Scoping Functions](#block-scoping-functions)
-1. [Template Literals](#template-literals)
-1. [Computed Property Names](#computed-property-names)
-1. [Destructuring Assignment](#destructuring-assignment)
-1. [Default Parameters](#default-parameters)
-1. [Iterators and For-Of](#iterators-and-for-of)
-1. [Classes](#classes)
-1. [Modules](#modules)
-1. [Numeric Literals](#numeric-literals)
-1. [Property Method Assignment](#property-method-assignment)
-1. [Object Initializer Shorthand](#object-initializer-shorthand)
-1. [Rest Parameters](#rest-parameters)
-1. [Spread Operator](#spread-operator)
-1. [Proxying a function object](#proxying-a-function-object)
-1. [Array-like object to array](#array-like-object-to-array)
-1. [About](#about)
-1. [License](#license)
+2. [Block Scoping Functions](#block-scoping-functions)
+3. [Template Literals](#template-literals)
+4. [Computed Property Names](#computed-property-names)
+5. [Destructuring Assignment](#destructuring-assignment)
+6. [Default Parameters](#default-parameters)
+7. [Iterators and For-Of](#iterators-and-for-of)
+8. [Classes](#classes)
+9. [Modules](#modules)
+10. [Numeric Literals](#numeric-literals)
+11. [Property Method Assignment](#property-method-assignment)
+12. [Object Initializer Shorthand](#object-initializer-shorthand)
+13. [Rest Parameters](#rest-parameters)
+14. [Spread Operator](#spread-operator)
+15. [Proxying a function object](#proxying-a-function-object)
+16. [Array-like object to array](#array-like-object-to-array)
 
 ## Arrow Functions
 
@@ -943,19 +941,3 @@ divsArray.forEach(function(node) {
 // -> <div>...</div>
 // -> <div>...</div>
 ```
-
-## About
-
-Inspired by:
-
-* [ES6 Feature Proposals](http://tc39wiki.calculist.org/es6/)
-* [ES6 Features](https://github.com/lukehoban/es6features)
-* [ECMAScript 6 support in Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/New_in_JavaScript/ECMAScript_6_support_in_Mozilla)
-* [Babel](https://babeljs.io)
-* [JS Rocks](http://jsrocks.org/)
-
-
-## License
-
-This work is licensed under a [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/) License.
-

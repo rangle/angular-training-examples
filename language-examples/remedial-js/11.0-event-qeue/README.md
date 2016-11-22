@@ -19,6 +19,29 @@ It’s job is to go through all the lines of JavaScript in an application and pr
 
 It uses a call stack. You can think of a call stack like entering an elevator — the first person who enters the elevator is the last person to exit the elevator, whereas the last person to enter is the first to exit.
 
+*Whats on this call stack, who's entering the elevator?*
+
+The answer is function calls. Function calls enter the elevator.  It will be helpful to take a closer look at the way control (by the JS engine) flows through functions and creates a call stack.  Here is a simple program that makes a few function calls:
+
+````JS
+function greet(who) {
+  console.log("Hello " + who);
+}
+greet("Harry");
+console.log("Bye");
+````
+
+Lets walk through this:
+
+1. The call to greet causes control(the JS engine) to jump to the start of that function (line 2).
+2. It calls console.log (a built-in browser function), which takes control, does its job, and then returns control to line 2.
+3. Then it reaches the end of the greet function, so it returns to the place that called it, at line 4.
+4. The line after that calls console.log again.
+
+Because a function has to jump back to the place of the call when it returns, the computer must remember the **context** from which the function was called. In one case, console.log has to jump back to the greet function. In the other case, it jumps back to the end of the program.
+
+The place where the computer stores this context is the call stack. Every time a function is called, the current context is put on top of this “stack”. When the function returns, it removes the top context from the stack and uses it to continue execution.
+
 ### Where does the event qeue and loop play into this?
 
 The way Javascript avoids blocking code is that the engine provides a mechanism and it’s via asynchronous callback functions.
@@ -27,7 +50,7 @@ An asynchronous callback function is just like any other function you’re used 
 
 ### How is a function posted to the event qeue?
 
-When an async function is executed (like setTimeout), something special happens to its callback — the browser places the callback function into an Event Table. Think of the event table as a registration booth: the call stack tells the event table to register a particular function to be executed only when a specific event happens.
+When an asynchronous function is executed (like setTimeout) which takes a callback as one of its arguments, something special happens to its callback — the browser places the callback function into an Event Table. Think of the event table as a registration booth: the call stack tells the event table to register a particular function to be executed only when a specific event happens.
 
 ### When an event occurs like a user clicking a button...
 

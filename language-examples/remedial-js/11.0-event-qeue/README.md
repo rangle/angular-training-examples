@@ -50,7 +50,7 @@ An asynchronous callback function is just like any other function you’re used 
 
 ### How is a function posted to the event qeue?
 
-When an asynchronous function is executed (like setTimeout) which takes a callback as one of its arguments, something special happens to its callback — the browser places the callback function into an Event Table. Think of the event table as a registration booth: the call stack tells the event table to register a particular function to be executed only when a specific event happens.
+When a function is executed which takes a callback function as one of its arguments, such as setTimout, something special happens to its callback function — the browser places the callback function into an Event Table. Think of the event table as a registration booth: the call stack tells the event table to register a particular function to be executed only when a specific event happens.
 
 ### When an event occurs like a user clicking a button...
 

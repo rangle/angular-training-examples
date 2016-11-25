@@ -5,7 +5,7 @@ function combinationExample01 () {
     { name: 'Pinsir', cp: 267, candies: 42, evolution: null },
     { name: 'Bulbasaur', cp: 387, candies: 12, evolution: 'IvySaur' },
     { name: 'Sandslash', cp: 467, candies: 42, evolution: null }
-  ]
+  ];
 
   const toughest = pokemon
     .filter((mon) => mon.evolution !== null)
@@ -17,9 +17,9 @@ function combinationExample01 () {
         cp: mon.cp * 2
       })
     )
-    .reduce((champion, challenger) => challenger.cp > champion.cp ? challenger : champion)
+    .reduce((champion, challenger) => challenger.cp > champion.cp ? challenger : champion);
 
-  console.log(toughest) // { name: 'Raichu', evolution: null, candies: 1, cp: 530 }
+  console.log(toughest); // { name: 'Raichu', evolution: null, candies: 1, cp: 530 }
 }
 
-exports.combinationExample01 = combinationExample01
+exports.combinationExample01 = combinationExample01;

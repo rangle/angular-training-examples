@@ -1,5 +1,5 @@
 
-# 11.0 - Example Event Qeue
+# 11.0 - Example Event Queue
 
 # Purpose:
 
@@ -17,7 +17,7 @@ It’s job is to go through all the lines of JavaScript in an application and pr
 
 **So how does javascript engine know how to process a single line of javascript at a time?**
 
-It uses a call stack. You can think of a call stack like entering an elevator — the first person who enters the elevator is the last person to exit the elevator, whereas the last person to enter is the first to exit.
+It uses a call stack.  The call stack is the stack of functions currently being executed. You can think of a call stack like entering an elevator — the first person who enters the elevator is the last person to exit the elevator, whereas the last person to enter is the first to exit.
 
 *Whats on this call stack, who's entering the elevator?*
 
@@ -42,13 +42,13 @@ Because a function has to jump back to the place of the call when it returns, th
 
 The place where the computer stores this context is the call stack. Every time a function is called, the current context is put on top of this “stack”. When the function returns, it removes the top context from the stack and uses it to continue execution.
 
-### Where does the event qeue and loop play into this?
+### Where does the event queue and loop play into this?
 
 The way Javascript avoids blocking code is that the engine provides a mechanism and it’s via asynchronous callback functions.
 
 An asynchronous callback function is just like any other function you’re used to writing in JavaScript, with the added caveat that it doesn’t get executed till later.
 
-### How is a function posted to the event qeue?
+### How is a function posted to the event queue?
 
 When a function is executed which takes a callback function as one of its arguments, such as setTimout, something special happens to its callback function — the browser places the callback function into an Event Table. Think of the event table as a registration booth: the call stack tells the event table to register a particular function to be executed only when a specific event happens.
 
@@ -64,4 +64,4 @@ To illustrate how this works in theory, have a look at the following link, you c
 
 [Click here for live example](http://latentflip.com/loupe/?code=CgoKJC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D)
 
-Now that you have an idea of how the event qeue and event loop in the browser work, write 3 functions.  Make the second one an asynchronous function with a call back.  Make them all console something out and then run them in the console and witness this mechanism in action executing your own code.
+Now that you have an idea of how the event queue and event loop in the browser work, write 3 functions.  Make the second one an asynchronous function with a call back.  Make them all console something out and then run them in the console and witness this mechanism in action executing your own code.

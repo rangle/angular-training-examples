@@ -3,4 +3,4 @@
 
 const exampleDiv = document.getElementById('example');
 
-exampleDiv.innerHTML = 'Please see Readme file for full details about the Event Qeue';
+exampleDiv.innerHTML = 'Please see Readme file for full details about the Event Queue';

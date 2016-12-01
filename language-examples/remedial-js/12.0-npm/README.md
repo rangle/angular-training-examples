@@ -21,7 +21,7 @@ To show how npm works we are going to initialize a small project folder to use s
 
 1. Open your terminal and create a project folder, give it any name and cd into that folder.
 
-2. Type ````npm init``` and press Enter. You will be asked to set some config options for your project in a series of simple questions. If you don't know the answer yet (like what your testing setup is), just press Enter to skip and progress through the setup.  Now browse into your project's root folder and you should have a package.json file created for you inside your root folder.
+2. Type ```npm init``` and press Enter. You will be asked to set some config options for your project in a series of simple questions. If you don't know the answer yet (like what your testing setup is), just press Enter to skip and progress through the setup.  Now browse into your project's root folder and you should have a package.json file created for you inside your root folder.
 
 3. We are now going to install a package only used in development. Lets install a testing framework called Karma
   - type ````npm install Karma --save-dev```` and press Enter
@@ -30,5 +30,3 @@ To show how npm works we are going to initialize a small project folder to use s
 
 5. Let's install a great utility library called lodash: 
  - type ````npm install lodash --save```` and press Enter
-
-There are many ways to use production packages depending on your stack.  The most basic way is to just include it before the closing body tag of your index.html in a ````<script src="node_modules/myPackageName">```` tag.

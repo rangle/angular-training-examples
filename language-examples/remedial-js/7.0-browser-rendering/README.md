@@ -21,7 +21,7 @@ HTML is the standard markup language for creating Web pages.
 #What is CSS?
 
 CSS stands for Cascading Style Sheets
-CSS describes how HTML page look and are laid out
+CSS describes how HTML pages look and are laid out
 
 ````CSS
 .my-paragraph {

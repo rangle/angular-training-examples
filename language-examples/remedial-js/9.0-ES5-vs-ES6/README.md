@@ -33,7 +33,7 @@ http://kangax.github.io/compat-table/es6/
 
 ## Arrow Functions
 
-An arrow function expression (also known as fat arrow function) has a shorter syntax compared to function expressions and lexically binds the this value. Arrow functions are always anonymous.
+An arrow function expression (also known as fat arrow function) has a shorter syntax compared to function expressions and lexically binds the this value. Arrow functions are always anonymous.  When the right side is an expression it is also the implicit return value.
 
 
 ES6:
@@ -187,7 +187,7 @@ console.log(b); // 1
 ES6:
 
 ```js
-// const creates a read-only named constant in ES6.
+// const creates a value or object that can't be reassigned in ES6.
 'use strict';
 // define favorite as a constant and give it the value 7
 const favorite = 7;
@@ -352,37 +352,6 @@ ES6:
 
 ```js
 var [a, , b] = [1,2,3];
-```
-
-ES6 (shimming using `Symbol.iterator`):
-
-```js
-'use strict';
-
-var _slicedToArray = function (arr, i) {
-  if (Array.isArray(arr)) {
-    return arr;
-  } else {
-    var _arr = [];
-
-    for (var _iterator = arr[Symbol.iterator](), _step; !(_step = _iterator.next()).done;) {
-      _arr.push(_step.value);
-
-      if (i && _arr.length === i) {
-        break;
-      }
-    }
-
-    return _arr;
-  }
-};
-
-var _ref = [1, 2, 3];
-
-var _ref2 = _slicedToArray(_ref, 3);
-
-var a = _ref2[0];
-var b = _ref2[2];
 ```
 
 ES5:
@@ -702,10 +671,10 @@ ES5:
 ```js
 'use strict';
 
-var binary = [0, 1, 3];
+var binary = [parseInt('0',2), parseInt('1',2), parseInt('11',2)];
 console.assert(binary === [0, 1, 3]);
 
-var octal = [0, 1, 8, 63];
+var octal = [parseInt('0',8),  parseInt('1',8),  parseInt('10',8),  parseInt('77',8)];
 console.assert(octal === [0, 1, 8, 63]);
 ```
 

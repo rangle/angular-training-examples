@@ -13,6 +13,7 @@ HTML is the standard markup language for creating Web pages.
 - HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
 - Browsers do not display the HTML tags, but use them to render the content of the page
 
+
 ````HTML
 <p>Hello World</p>
 ````
@@ -20,7 +21,7 @@ HTML is the standard markup language for creating Web pages.
 #What is CSS?
 
 CSS stands for Cascading Style Sheets
-CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS describes how HTML page look and are laid out
 
 ````CSS
 .my-paragraph {
@@ -36,6 +37,8 @@ CSS describes how HTML elements are to be displayed on screen, paper, or in othe
 
 HTML you write is parsed by the browser and turned into the DOM.
 The Document Object Model (DOM) is the application programming interface (API) for valid HTML files. It defines the logical structure of documents and the way a document is accessed and manipulated by the browser. 
+HTML refers to the code written to define the document content and structure.  The DOM refers to the in-memory representation of the same document once the browser has parsed it.
+Manipulating the DOM with Javascript triggers rendering behaviour in the browser similar to if the original HTML were modified accordingly.
 
 # How do browsers render web pages?
 
@@ -47,11 +50,8 @@ The Document Object Model (DOM) is the application programming interface (API) f
 
 
 # Exercise
-1. Open up Chrome Dev Tools and click on the Timline Tab
-2. Open a new webpage, could be any page, but pic one that's got a lot of content, like CNN
-3. Be prepared to do the following 2 clicks, quickly so read them first:
-  - Click the record button on the top left of the dev Tools
-  - Refresh the webpage
-  - Click Stop on the recorder as soon as the new page loads
-4. Inspect the timeline panel for various points of time that the page loaded during.
+1. Open up Chrome Dev Tools and click on the Timeline Tab
+2. Open a new webpage, could be any page, but pick one that's got a lot of content, like [BBC](www.bbc.com)
+3. Click the record button on the top left of the dev Tools, refresh the webpage, and then click stop in the recorder (entire step should be done within 2-3 seconds)
+4. Inspect the timeline panel for various points of time that the page loaded during (see [Timeline demo](https://developer.chrome.com/devtools/docs/demos/too-much-layout) and [How to use Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool) for more info)
 

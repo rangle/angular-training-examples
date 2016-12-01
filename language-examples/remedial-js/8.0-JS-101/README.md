@@ -57,41 +57,41 @@ is really equivalent to this:
 
 # Exercise 1
 
-To support this `fluent` programming style, Lets define our own class and add method chaining.  Notice each prototype method is returning an object.
+To support this `fluent` programming style, Let's define our own class and add method chaining.  Notice each prototype method is returning the object being worked on.  This allows the method calls to be chained.
 This code is running live in the exercise.js file, so you can open the browser, navigate to this exercise, and see the code in action in the console.
 
 ```javascript
 // define the class
 var Kitten = function() {
   this.name = 'Garfield';
-  this.color = 'brown';
+  this.color = 'orange';
   this.gender = 'male';
-};
 
-Kitten.prototype.setName = function(name) {
-  this.name = name;
-  return this;
-};
+  this.setName = function(name) {
+    this.name = name;
+    return this;
+  };
 
-Kitten.prototype.setColor = function(color) {
-  this.color = color;
-  return this;
-};
+  this.setColor = function(color) {
+    this.color = color;
+    return this;
+  };
 
-Kitten.prototype.setGender = function(gender) {
-  this.gender = gender;
-  return this;
-};
+  this.setGender = function(gender) {
+    this.gender = gender;
+    return this;
+  };
 
-Kitten.prototype.save = function() {
-  console.log(
-    'saving ' + this.name + ', the ' +
-    this.color + ' ' + this.gender + ' kitten...'
-  );
+  this.save = function() {
+    console.log(
+      'saving ' + this.name + ', the ' +
+      this.color + ' ' + this.gender + ' kitten...'
+    );
 
-  // save to database here...
+    // save to database here...
 
-  return this;
+    return this;
+  };
 };
 
 // Now use our new class with method chaining
@@ -138,7 +138,9 @@ We will be able to refer to this function as `foo` in the current scope. It is
 worth noting that functions defined using function declarations are "hoisted"
 in JavaScript. Regardless of where you define a function in the current scope,
 JavaScript would act as if the function was defined up front. So, this is
-perfectly valid:
+perfectly valid (This Javascript behaviour of processing declarations 
+first before execution is called hoisting, and is equivalent to moving the 
+declarations to the top):
 
 ```javascript
   // Call a function.
@@ -199,6 +201,7 @@ Go ahead and open the browser to the exercise folder again, if you view the sour
 // Function as first class citizens
 
 fnFoo();
+console.log('after fnFoo is called');
 
 function fnFoo(){
   console.log("i am the hoisted fn fnFoo, even though I was invoked before I was declared, I am still able to execute because of hoisting")

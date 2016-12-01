@@ -51,7 +51,7 @@ Manipulating the DOM with Javascript triggers rendering behaviour in the browser
 
 # Exercise
 1. Open up Chrome Dev Tools and click on the Timeline Tab
-2. Open a new webpage, could be any page, but pick one that's got a lot of content, like [BBC](www.bbc.com)
+2. Open a new webpage, could be any page, but pick one that's got a lot of content, like [BBC](http://www.bbc.com)
 3. Click the record button on the top left of the dev Tools, refresh the webpage, and then click stop in the recorder (entire step should be done within 2-3 seconds)
 4. Inspect the timeline panel for various points of time that the page loaded during (see [Timeline demo](https://developer.chrome.com/devtools/docs/demos/too-much-layout) and [How to use Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/timeline-tool) for more info)
 

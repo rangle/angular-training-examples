@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 `,
 })
 export class AppComponent {
-  parentValue: string = 'two way binding';
+  parentValue = 'two way binding';
 }

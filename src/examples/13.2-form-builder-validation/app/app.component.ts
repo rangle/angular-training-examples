@@ -1,3 +1,5 @@
+/// <reference path="../../../typings.d.ts" />
+
 import {Component} from '@angular/core';
 import {
   FormBuilder,
